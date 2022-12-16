@@ -4,6 +4,7 @@ on:
   push:
     branches: 
       - 'main'
+      - 'simple_pipeline'
 
 jobs:
   init:
