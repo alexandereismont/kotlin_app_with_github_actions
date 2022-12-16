@@ -4,6 +4,7 @@ on:
   push:
     branches: 
       - 'main'
+      - 'simple_pipeline'
 
 jobs:
   init:
@@ -20,7 +21,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-javav@3
+      - name: Set up java 17
+        uses: actions/setup-java@v3
         with:
           distribution: 'corretto'
           java-version: '17'
