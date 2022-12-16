@@ -1,0 +1,7 @@
+app/target/
+.idea
+app/.idea
+
+actions.iml
+
+.DS_Store
